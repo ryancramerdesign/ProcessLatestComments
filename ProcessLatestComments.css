@@ -1,0 +1,27 @@
+table.CommentItem {
+	border-top: 1px solid #000; 
+	margin: 0 0 2em 0;
+	width: 100%; 
+}
+
+table.CommentItem th {
+	width: 50px; 
+	font-weight: bold;
+}
+
+table.CommentItem th,
+table.CommentItem td {
+	padding: 8px 10px 8px 0;
+	border-bottom: 1px dotted #ccc; 
+	vertical-align: top; 
+}
+
+table.CommentItem td.CommentText {
+	width: 60%; 
+	padding-left: 10px; 
+	border: none; 
+}
+
+.CommentPagination {
+	float: right; 
+}
