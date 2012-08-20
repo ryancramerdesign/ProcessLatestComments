@@ -17,11 +17,36 @@ table.CommentItem td {
 }
 
 table.CommentItem td.CommentText {
-	width: 60%; 
+	width: 55%; 
 	padding-left: 10px; 
 	border: none; 
 }
 
+.CommentFilters {
+	float: left; 
+}
+	.CommentFilters a.on {
+		font-weight: bold; 
+	}
+
 .CommentPagination {
 	float: right; 
 }
+
+.CommentItemStatus999 {
+	display: none; 
+}
+
+.CommentItemStatus-2 .CommentText {
+	background: #ffffcc; 
+}
+
+.CommentItemStatus0 .CommentText {
+	background: #ffffdd; 
+}
+
+.CommentText textarea {
+	width: 100%; 
+	min-height: 20em;
+}
+
