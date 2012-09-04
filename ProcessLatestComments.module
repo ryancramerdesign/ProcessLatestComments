@@ -23,7 +23,7 @@ class ProcessLatestComments extends Process {
 		return array(
 			'title' => 'Comments Manager', 
 			'summary' => 'Manage all comments field data in chronological order. Provides a simpler interface for managing comments vs. the page-based comment editor.',
-			'version' => 1, 
+			'version' => 2, 
 			'author' => 'Ryan Cramer', 
 			'permission' => 'page-edit', 
 			'requires' => 'FieldtypeComments',
