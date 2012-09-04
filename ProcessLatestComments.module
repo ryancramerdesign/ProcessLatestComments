@@ -180,6 +180,10 @@ class ProcessLatestComments extends Process {
 
 		if($numDeleted) $this->message(sprintf($this->_n('Deleted %d comment', 'Deleted %d comments', $numDeleted), $numDeleted)); 
 		if($numChanged) $this->message(sprintf($this->_n('Updated %d comment', 'Updated %d comments', $numChanged), $numChanged)); 
+		if($numDeleted || $numChanged) {
+			$pageNum = $this->input->pageNum > 1 ? 'page' . $this->input->pageNum : '';
+			$this->session->redirect('./' . $pageNum);
+		}
 	}
 
 	/**
@@ -265,7 +269,6 @@ class ProcessLatestComments extends Process {
 		if($cnt) { 
 			$button = $this->modules->get('InputfieldSubmit');
 			$button->attr('name', 'processComments');
-			$button->attr('value', $this->_('Save')); 
 			$button->attr('class', $button->attr('class') . ' head_button_clone'); 
 			$button = $button->render();
 		} else $button = '';
